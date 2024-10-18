@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@700&family=Sixtyfour+Convergence:SCAN@30&display=swap" rel="stylesheet">
+
+    <title>To Do Items</title>
+  <style>
+
+    body {
+    background-color: #FAFAFA;
+    font-family: "Nunito", sans-serif;
+    padding-top: 20px;
+    background-color: #ffc8a2;
+    }
+
+    .container{
+    max-width:550px;
+    margin: auto;
+    background-color: white;
+    -webkit-box-shadow: 1px 1px 35px 15px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 1px 35px 15px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 1px 35px 15px rgba(34, 60, 80, 0.2);
+    }
+
+    p, a {
+    color:#CD853F;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald", sans-serif;
+    color:#D2691E;
+    }
+
+    .header-bar {
+    display: flex;
+    justify-content: space-between;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(90deg, rgba(205,133,63,1) 9%, rgba(218,165,32,1) 36%, rgba(205,133,63,1) 91%);
+    }
+
+  .header-bar a{
+  text-decoration: none;
+  color: rgb(247, 247, 247);
+  }
+
+  .header-bar h1{
+  color: #fff;
+  }
+
+  .header-bar h3{
+  color: #fff;
+  }
+
+  .task-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid rgb(226, 226, 226)
+  }
+
+  .task-title{
+  display: flex;
+  }
+
+  .task-title a {
+  text-decoration: none;
+  color: #D2691E;
+  margin-left: 10px;
+  }
+
+  .task-complete-icon{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: green;
+  }
+
+  .task-incomplete-icon{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #DCDCDC;
+  }
+
+  .delete-link{
+  text-decoration: none;
+  color: red;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 2;
+   }
+
+
+  #search-add-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  }
+
+  #add-link{
+  text-decoration:none;
+  color:green;
+  font-size: 60px;
+  text-shadow: 1px 1px 538755;
+  }
+
+  input[type=text],
+  input[type=password],
+  textarea{
+  border: 1px solid #D2691E;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  }
+
+  label{
+  padding-top: 10px !important;
+  display: block;
+  color: #D2691E;
+  }
+
+  .button{
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #D2691E;
+  color: #D2691E;
+  }
+
+  .card-body{
+  padding:20px;
+  }
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+{% block content %}
+
+{% endblock content%}
+
+</div>
+
+</body>
+</html>
